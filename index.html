@@ -1,0 +1,47 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>AI Ping Pong Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+
+</head>
+
+<body background="background1.jpg">
+    <center>
+        <heading>AI Ping Pong Game</heading><br>
+        <button data-toggle='modal' data-target=#openmodal class="btn btn-warning"> Instructions </button>
+
+        <div id="openmodal" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3> Instructions</h3>
+                        <button class="close" data-dismiss="modal"> &times;</button>
+
+                    </div>
+                    <div class="modal-body"><h3 id="modalid">Move your paddle up and down using the mouse to hit the ball back to your
+                        opponent</h3></div>
+                </div>
+            </div>
+        </div></button>
+        <br><br>
+        <button class="btn btn-success" onclick="startGame()"> Start Game </button><br>
+        <button class="btn btn-danger" onclick="restart()"> Restart </button><br>
+        <heading class="btn btn-danger" id="status"></heading><br>
+        <div id="canvas"></div>
+        <h3 id="footer"> Creator : Advaitt</h3>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>

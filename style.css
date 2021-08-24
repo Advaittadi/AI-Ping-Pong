@@ -1,0 +1,18 @@
+body
+{
+color: white;
+font-size: large;
+}
+#footer
+{
+    bottom: 0;
+    position: fixed;
+    line-height: 2;
+    margin: 0px;
+    width: 100%;
+}
+#openmodal
+{
+    color: black;
+}
+
